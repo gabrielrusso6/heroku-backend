@@ -1,14 +1,14 @@
 const firebase = require('firebase');
 
 var firebaseConfig = {
-    apiKey: "AIzaSyAhZFue5vUk-0zx3Zwu_-qTb8TOF2kAzqo",
-    authDomain: "aprendendo-bd-nsql-nr.firebaseapp.com",
-    databaseURL: "https://aprendendo-bd-nsql-nr-default-rtdb.firebaseio.com",
-    projectId: "aprendendo-bd-nsql-nr",
-    storageBucket: "aprendendo-bd-nsql-nr.appspot.com",
-    messagingSenderId: "101585670714",
-    appId: "1:101585670714:web:cfd32c6837cae6cb05db03",
-    measurementId: "G-SXKWW74RV2"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.DATABASE_URL,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.APP_ID,
+    measurementId: process.env.MEASUREMENT_ID
   };
 
 firebase.initializeApp(firebaseConfig);
