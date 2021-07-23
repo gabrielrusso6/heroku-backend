@@ -7,4 +7,8 @@ routes.get('/', (req, res) => {
 routes.get('/users', (req, res) => {
     return res.json({'Hello': 'World'})
 })
+
+routes.get('/users2', (req, res) => {
+    return res.json({'HelloTwo': 'WorldTwo'})
+})
 module.exports = routes
